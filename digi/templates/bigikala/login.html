@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+</head>
+<body>
+    <div style="direction: rtl;padding-top: 20px;height: 300px;margin-top: 100px;margin-right: 500px;">
+        <h1> log in</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+    
+    <input type="submit" value="ورود">
+   
+
+    </form>
+
+    <a href="{% url 'digi:signup' %}" rel="sign up page" style="margin-top: 30px;">
+
+     <input type="button" value="sign up" style="margin-top: 30px;">
+    
+    </a>
+
+    </div>
+    
+
+
+    
+</body>
+</html>
